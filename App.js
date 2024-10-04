@@ -24,11 +24,10 @@ export default function App() {
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },
+          tabBarActiveTintColor: 'orange',
+          tabBarInactiveTintColor: 'gray',
+          tabBarStyle: { display: 'flex' },
         })}
-        tabBarOptions={{
-          activeTintColor: 'orange',
-          inactiveTintColor: 'gray',
-        }}
       >
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Wishlist" component={WishlistScreen} />
